@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "opp_synthetic_rural_girl_stem_2026",
+  "name": "Synthetic Demo: National Rural Girl STEM Excellence Fellowship",
+  "category": "scholarship",
+  "provider": "Department of Science and Technology (Synthetic Demo)",
+  "description": "SYNTHETIC TEST FIXTURE: Demonstrates multi-condition matching (Class 10 rural girl student, science stream, income < 2 LPA) for the eligibility engine.",
+  "education_levels": ["class_11", "class_12"],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_syn_gender",
+      "field": "gender",
+      "operator": "equals",
+      "value": "female",
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_syn_test_1",
+      "review_status": "unreviewed",
+      "notes": "Synthetic test criterion"
+    },
+    {
+      "criterion_id": "crit_syn_income",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 200000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_syn_test_2",
+      "review_status": "unreviewed",
+      "notes": "Synthetic test criterion"
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "Synthetic Aadhaar",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Synthetic fixture",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": 15000.0,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Synthetic scholarship amount of Rs. 15,000/- p.a.",
+    "non_financial_benefits": ["Mentorship"]
+  },
+  "application_period": {
+    "opening_date": "2026-08-01",
+    "deadline": "2026-10-31",
+    "academic_year": "2026-2027",
+    "status": "upcoming",
+    "status_verification_date": "2026-10-16",
+    "notes": "Synthetic demonstration window"
+  },
+  "application_status": "upcoming",
+  "official_source_urls": ["https://example.gov.in/synthetic-scheme"],
+  "application_url": "https://example.gov.in/apply",
+  "evidence": [
+    {
+      "evidence_id": "ev_syn_test_1",
+      "field_path": "eligibility_criteria[0].value",
+      "source_url": "https://example.gov.in/synthetic-scheme",
+      "source_title": "Synthetic Guidelines",
+      "supporting_excerpt": "Synthetic test excerpt demonstrating gender criterion.",
+      "retrieved_at": "2026-10-16T10:00:00Z",
+      "extraction_method": "manual",
+      "review_status": "pending_review"
+    },
+    {
+      "evidence_id": "ev_syn_test_2",
+      "field_path": "eligibility_criteria[1].value",
+      "source_url": "https://example.gov.in/synthetic-scheme",
+      "source_title": "Synthetic Guidelines",
+      "supporting_excerpt": "Synthetic test excerpt demonstrating annual income limit of 2 Lakhs.",
+      "retrieved_at": "2026-10-16T10:00:00Z",
+      "extraction_method": "manual",
+      "review_status": "pending_review"
+    }
+  ],
+  "last_checked_at": "2026-10-16T10:00:00Z",
+  "verification_status": "draft",
+  "review_notes": ["SYNTHETIC FIXTURE - NOT A REAL OPPORTUNITY"],
+  "synthetic": true
+}

@@ -1,0 +1,74 @@
+{
+  "project_name": "Yogya Opportunity Pipeline",
+  "version": "1.0.0",
+  "default_schema_version": "1.0.0",
+  "directories": {
+    "raw": "data/raw",
+    "drafts": "data/drafts",
+    "review_queue": "data/review_queue",
+    "processed": "data/processed",
+    "reports": "data/reports",
+    "fixtures": "data/fixtures"
+  },
+  "schemas": {
+    "opportunity": "schemas/opportunity.schema.json",
+    "extraction": "schemas/extraction.schema.json"
+  },
+  "llm": {
+    "default_provider": "gemini",
+    "model_name": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "max_output_tokens": 8192,
+    "request_timeout_seconds": 60,
+    "max_retries": 3,
+    "retry_backoff_seconds": 2
+  },
+  "crawler": {
+    "user_agent": "YogyaOpportunityResearchBot/1.0 (+https://yogya.org; for hackathon research)",
+    "request_timeout_seconds": 30,
+    "max_content_bytes": 10485760,
+    "rate_limit_delay_seconds": 1.0
+  },
+  "deduplication": {
+    "name_similarity_threshold": 0.85,
+    "provider_similarity_threshold": 0.80
+  },
+  "verification": {
+    "allowed_statuses": [
+      "draft",
+      "needs_review",
+      "reviewed",
+      "verified",
+      "stale",
+      "rejected"
+    ],
+    "allowed_transitions": {
+      "draft": ["needs_review", "rejected"],
+      "needs_review": ["reviewed", "rejected", "draft"],
+      "reviewed": ["verified", "needs_review", "rejected"],
+      "verified": ["stale", "needs_review"],
+      "stale": ["needs_review", "draft", "verified"],
+      "rejected": ["draft", "needs_review"]
+    },
+    "ai_allowed_initial_statuses": ["draft", "needs_review"]
+  },
+  "categories": [
+    "scholarship",
+    "educational_assistance",
+    "vocational_training",
+    "apprenticeship",
+    "course",
+    "other"
+  ],
+  "education_levels": [
+    "class_9",
+    "class_10",
+    "class_11",
+    "class_12",
+    "undergraduate",
+    "diploma",
+    "vocational",
+    "postgraduate",
+    "all"
+  ]
+}

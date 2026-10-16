@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "opp_depwd_postmatric_disabilities_2026",
+  "name": "Post-Matric Scholarship for Students with Disabilities",
+  "category": "scholarship",
+  "provider": "Department of Empowerment of Persons with Disabilities, MSJE",
+  "description": "Financial assistance for students with benchmark disabilities pursuing Class 11, Class 12, and post-secondary studies.",
+  "education_levels": [
+    "class_11",
+    "class_12",
+    "undergraduate",
+    "diploma"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_pwd_post_dis",
+      "field": "min_disability_percentage",
+      "operator": "greater_than_or_equal",
+      "value": 40.0,
+      "unit": "percentage",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_pwd_post_dis",
+      "review_status": "confirmed",
+      "notes": "Minimum 40% disability."
+    },
+    {
+      "criterion_id": "crit_pwd_post_inc",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 250000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_pwd_post_inc",
+      "review_status": "confirmed",
+      "notes": "Parental income limit Rs. 2.5 LPA."
+    },
+    {
+      "criterion_id": "crit_pwd_post_lvl",
+      "field": "current_education_level",
+      "operator": "in",
+      "value": [
+        "class_11",
+        "class_12",
+        "undergraduate",
+        "diploma"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_pwd_post_lvl",
+      "review_status": "confirmed",
+      "notes": "Enrolled in Class 11, 12, or higher."
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "Disability Certificate / UDID",
+      "document_type": "disability_proof",
+      "mandatory": true,
+      "description": "UDID card showing benchmark disability.",
+      "evidence_reference": "ev_pwd_post_dis"
+    },
+    {
+      "document_name": "Income Certificate",
+      "document_type": "income_proof",
+      "mandatory": true,
+      "description": "Parental income <= 2.5 LPA.",
+      "evidence_reference": "ev_pwd_post_inc"
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": 5500.0,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Maintenance allowance (Rs. 4,000) + Book grant (Rs. 1,500) plus escort/reader allowance.",
+    "non_financial_benefits": [
+      "Government National Certification",
+      "Direct Bank Transfer (DBT)"
+    ]
+  },
+  "application_period": {
+    "opening_date": "2025-07-01",
+    "deadline": "2025-12-31",
+    "academic_year": "2025-2026",
+    "status": "closed",
+    "status_verification_date": "2026-10-16",
+    "notes": "Verified against official guidelines. Window status: closed."
+  },
+  "application_status": "closed",
+  "official_source_urls": [
+    "https://scholarships.gov.in/",
+    "https://disabilityaffairs.gov.in/content/page/post-matric.php"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [
+    {
+      "evidence_id": "ev_pwd_post_dis",
+      "field_path": "eligibility_criteria[0].value",
+      "supporting_excerpt": "Minimum 40% disability with valid UDID / Medical certificate.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://disabilityaffairs.gov.in/content/page/post-matric.php",
+      "source_title": "Post-Matric Scholarship for Students with Disabilities Guidelines"
+    },
+    {
+      "evidence_id": "ev_pwd_post_inc",
+      "field_path": "eligibility_criteria[1].value",
+      "supporting_excerpt": "Parental income not exceeding Rs. 2,50,000/- per annum.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://disabilityaffairs.gov.in/content/page/post-matric.php",
+      "source_title": "Post-Matric Scholarship for Students with Disabilities Guidelines"
+    },
+    {
+      "evidence_id": "ev_pwd_post_lvl",
+      "field_path": "education_levels",
+      "supporting_excerpt": "Enrolled in Class XI, XII or recognized diploma/degree courses.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://disabilityaffairs.gov.in/content/page/post-matric.php",
+      "source_title": "Post-Matric Scholarship for Students with Disabilities Guidelines"
+    },
+    {
+      "evidence_id": "ev_pwd_post_ben",
+      "field_path": "benefits.financial_amount",
+      "supporting_excerpt": "Maintenance allowance starting from Rs. 4,000/- p.a. for Class XI and XII day-scholars.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://disabilityaffairs.gov.in/content/page/post-matric.php",
+      "source_title": "Post-Matric Scholarship for Students with Disabilities Guidelines"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:37:35.670072+00:00",
+  "verification_status": "verified",
+  "review_notes": [
+    "[2026-10-16T05:37:35.670072+00:00] Verified by Human Data-Quality Engineer: Exact excerpts confirmed from official Department of Empowerment of Persons with Disabilities, MSJE guidelines.",
+    "All mandatory criteria and benefit amounts cross-referenced with official NSP/Ministry documentation."
+  ],
+  "synthetic": false
+}

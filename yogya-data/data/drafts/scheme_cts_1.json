@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "scheme_cts_1",
+  "name": "Scheme (Cts)\n1",
+  "category": "vocational_training",
+  "provider": "DIRECTORATE GENERAL OF TRAINING",
+  "description": "DIRECTORATE GENERAL OF TRAINING (DGT), MSDE - CRAFTSMEN TRAINING SCHEME (CTS) 1. Objective: To provide vocational training to school leavers, existing workers and school students to prepare them for industrial employment. 2. Entry Qualifications: Varies from Class VIII pass to Class X pass depending on engineering or non-engineering trade. 3. Age Limit: Minimum age is 14 years. No upper age limit.",
+  "education_levels": [
+    "vocational"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [],
+  "required_documents": [
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Required for student identification and direct bank transfer.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": null,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Assistance provided under Scheme (Cts)\n1",
+    "non_financial_benefits": []
+  },
+  "application_period": {
+    "opening_date": null,
+    "deadline": null,
+    "academic_year": null,
+    "status": "unknown",
+    "status_verification_date": "2026-10-16",
+    "notes": "Extracted via rule-based fallback. Requires human review."
+  },
+  "application_status": "unknown",
+  "official_source_urls": [
+    "https://www.bharatskill.gov.in/"
+  ],
+  "application_url": "https://www.bharatskill.gov.in/",
+  "evidence": [],
+  "last_checked_at": "2026-10-16T05:37:35.683209+00:00",
+  "verification_status": "draft",
+  "review_notes": [
+    "Created via rule-based fallback extractor. Pending human verification."
+  ],
+  "synthetic": false
+}

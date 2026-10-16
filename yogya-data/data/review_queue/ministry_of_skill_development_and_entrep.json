@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "ministry_of_skill_development_and_entrep",
+  "name": "MINISTRY OF SKILL DEVELOPMENT AND ENTREPRENEURSHIP - NAPS-2",
+  "category": "apprenticeship",
+  "provider": "MINISTRY OF SKILL DEVELOPMENT AND ENTREPRENEURSHIP",
+  "description": "MINISTRY OF SKILL DEVELOPMENT AND ENTREPRENEURSHIP - NAPS-2 1. Objective: To promote apprenticeship training in the country and increase the engagement of apprentices. 2. Eligibility for Apprentices: - Candidate must have completed at least 14 years of age (18 years for hazardous industries). - Must possess minimum educational qualification as prescribed for the trade (Class 5, Class 8, Class 10, ",
+  "education_levels": [
+    "class_10",
+    "class_12"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [],
+  "required_documents": [
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Required for student identification and direct bank transfer.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": null,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Assistance provided under MINISTRY OF SKILL DEVELOPMENT AND ENTREPRENEURSHIP - NAPS-2",
+    "non_financial_benefits": []
+  },
+  "application_period": {
+    "opening_date": null,
+    "deadline": null,
+    "academic_year": null,
+    "status": "unknown",
+    "status_verification_date": "2026-10-16",
+    "notes": "Extracted via rule-based fallback. Requires human review."
+  },
+  "application_status": "unknown",
+  "official_source_urls": [
+    "https://www.apprenticeshipindia.gov.in/"
+  ],
+  "application_url": "https://www.apprenticeshipindia.gov.in/",
+  "evidence": [],
+  "last_checked_at": "2026-10-16T05:37:35.685280+00:00",
+  "verification_status": "needs_review",
+  "review_notes": [
+    "Created via rule-based fallback extractor. Pending human verification.",
+    "Placed into review queue on 2026-10-16T05:40:18.939866+00:00"
+  ],
+  "synthetic": false
+}

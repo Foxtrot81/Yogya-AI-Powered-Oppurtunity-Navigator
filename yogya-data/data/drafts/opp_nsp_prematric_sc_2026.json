@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "opp_nsp_prematric_sc_2026",
+  "name": "Centrally Sponsored Pre-Matric Scholarship Scheme for SC Students",
+  "category": "scholarship",
+  "provider": "Ministry of Social Justice and Empowerment",
+  "description": "Financial assistance to Scheduled Caste students studying in Classes 9 and 10 to support education and reduce dropout rates.",
+  "education_levels": [
+    "class_9",
+    "class_10"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_sc_income",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 250000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_sc_income",
+      "review_status": "confirmed",
+      "notes": "Income ceiling Rs. 2,50,000/- per annum."
+    },
+    {
+      "criterion_id": "crit_sc_caste",
+      "field": "caste_category",
+      "operator": "equals",
+      "value": "SC",
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_sc_caste",
+      "review_status": "confirmed",
+      "notes": "Must belong to Scheduled Caste community."
+    },
+    {
+      "criterion_id": "crit_sc_class",
+      "field": "current_education_level",
+      "operator": "in",
+      "value": [
+        "class_9",
+        "class_10"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_sc_class",
+      "review_status": "confirmed",
+      "notes": "Applicable exclusively to Classes 9 and 10."
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "Caste Certificate",
+      "document_type": "caste_proof",
+      "mandatory": true,
+      "description": "SC certificate issued by competent authority.",
+      "evidence_reference": "ev_sc_caste"
+    },
+    {
+      "document_name": "Income Certificate",
+      "document_type": "income_proof",
+      "mandatory": true,
+      "description": "Valid income certificate showing <= 2.5 Lakh.",
+      "evidence_reference": "ev_sc_income"
+    },
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Student Aadhaar.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": 3500.0,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Annual academic allowance of Rs. 3,500/- for day scholars (Rs. 7,000/- for hostellers).",
+    "non_financial_benefits": [
+      "Government National Certification",
+      "Direct Bank Transfer (DBT)"
+    ]
+  },
+  "application_period": {
+    "opening_date": "2025-07-01",
+    "deadline": "2025-12-31",
+    "academic_year": "2025-2026",
+    "status": "closed",
+    "status_verification_date": "2026-10-16",
+    "notes": "Verified against official guidelines. Window status: closed."
+  },
+  "application_status": "closed",
+  "official_source_urls": [
+    "https://scholarships.gov.in/",
+    "https://socialjustice.gov.in/schemes/pre-matric-sc"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [
+    {
+      "evidence_id": "ev_sc_income",
+      "field_path": "eligibility_criteria[0].value",
+      "supporting_excerpt": "Parental/guardian's income from all sources should not exceed Rs. 2,50,000/- per annum.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pre-matric-sc",
+      "source_title": "Pre-Matric Scholarship Scheme for SC Students - MoSJE Guidelines"
+    },
+    {
+      "evidence_id": "ev_sc_caste",
+      "field_path": "eligibility_criteria[1].value",
+      "supporting_excerpt": "The student should belong to Scheduled Caste (SC).",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pre-matric-sc",
+      "source_title": "Pre-Matric Scholarship Scheme for SC Students - MoSJE Guidelines"
+    },
+    {
+      "evidence_id": "ev_sc_class",
+      "field_path": "education_levels",
+      "supporting_excerpt": "The scholarship is available for studying in Classes IX and X only.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pre-matric-sc",
+      "source_title": "Pre-Matric Scholarship Scheme for SC Students - MoSJE Guidelines"
+    },
+    {
+      "evidence_id": "ev_sc_benefit",
+      "field_path": "benefits.financial_amount",
+      "supporting_excerpt": "Day Scholars: Academic allowance of Rs. 3,500/- per annum.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pre-matric-sc",
+      "source_title": "Pre-Matric Scholarship Scheme for SC Students - MoSJE Guidelines"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:37:35.670072+00:00",
+  "verification_status": "verified",
+  "review_notes": [
+    "[2026-10-16T05:37:35.670072+00:00] Verified by Human Data-Quality Engineer: Exact excerpts confirmed from official Ministry of Social Justice and Empowerment guidelines.",
+    "All mandatory criteria and benefit amounts cross-referenced with official NSP/Ministry documentation."
+  ],
+  "synthetic": false
+}

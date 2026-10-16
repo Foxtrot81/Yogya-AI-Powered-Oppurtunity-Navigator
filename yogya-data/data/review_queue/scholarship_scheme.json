@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "scholarship_scheme",
+  "name": "Scholarship Scheme",
+  "category": "scholarship",
+  "provider": "Government of India",
+  "description": "Official guidelines for National Scholarship Scheme. Income limit Rs. 2,50,000 p.a.",
+  "education_levels": [
+    "class_9",
+    "class_10",
+    "class_11",
+    "class_12"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_income",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 250000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_income_1",
+      "review_status": "unreviewed",
+      "notes": "Auto-detected from excerpt: 'Income limit Rs. 2,50,000 p.a.'"
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Required for student identification and direct bank transfer.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": null,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Assistance provided under Scholarship Scheme",
+    "non_financial_benefits": []
+  },
+  "application_period": {
+    "opening_date": null,
+    "deadline": null,
+    "academic_year": null,
+    "status": "unknown",
+    "status_verification_date": "2026-10-16",
+    "notes": "Extracted via rule-based fallback. Requires human review."
+  },
+  "application_status": "unknown",
+  "official_source_urls": [
+    "https://scholarships.gov.in/test-manual"
+  ],
+  "application_url": "https://scholarships.gov.in/test-manual",
+  "evidence": [
+    {
+      "evidence_id": "ev_income_1",
+      "field_path": "eligibility_criteria[0].value",
+      "source_url": "https://scholarships.gov.in/test-manual",
+      "source_title": "Test Scheme",
+      "supporting_excerpt": "Income limit Rs. 2,50,000 p.a.",
+      "retrieved_at": "2026-10-16T05:39:31.305922+00:00",
+      "extraction_method": "rule_based",
+      "review_status": "pending_review"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:39:31.305922+00:00",
+  "verification_status": "needs_review",
+  "review_notes": [
+    "Created via rule-based fallback extractor. Pending human verification.",
+    "Placed into review queue on 2026-10-16T05:40:18.970737+00:00"
+  ],
+  "synthetic": false
+}

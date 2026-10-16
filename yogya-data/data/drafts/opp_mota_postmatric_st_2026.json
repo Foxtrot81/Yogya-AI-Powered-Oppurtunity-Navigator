@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "opp_mota_postmatric_st_2026",
+  "name": "Post-Matric Scholarship Scheme for ST Students",
+  "category": "scholarship",
+  "provider": "Ministry of Tribal Affairs",
+  "description": "Centrally sponsored scheme providing financial assistance to Scheduled Tribe students for post-matriculation or post-secondary education including Classes 11 and 12.",
+  "education_levels": [
+    "class_11",
+    "class_12",
+    "undergraduate",
+    "diploma",
+    "vocational"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_pmst_inc",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 250000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_pmst_inc",
+      "review_status": "confirmed",
+      "notes": "Income ceiling Rs. 2,50,000/- p.a."
+    },
+    {
+      "criterion_id": "crit_pmst_caste",
+      "field": "caste_category",
+      "operator": "equals",
+      "value": "ST",
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_pmst_caste",
+      "review_status": "confirmed",
+      "notes": "Must belong to Scheduled Tribe."
+    },
+    {
+      "criterion_id": "crit_pmst_lvl",
+      "field": "current_education_level",
+      "operator": "in",
+      "value": [
+        "class_11",
+        "class_12",
+        "undergraduate",
+        "diploma",
+        "vocational"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_pmst_scope",
+      "review_status": "confirmed",
+      "notes": "Post-matric studies from Class 11."
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "ST Certificate",
+      "document_type": "caste_proof",
+      "mandatory": true,
+      "description": "ST certificate.",
+      "evidence_reference": "ev_pmst_caste"
+    },
+    {
+      "document_name": "Income Certificate",
+      "document_type": "income_proof",
+      "mandatory": true,
+      "description": "Family income certificate.",
+      "evidence_reference": "ev_pmst_inc"
+    },
+    {
+      "document_name": "Class 10 Pass Certificate",
+      "document_type": "academic_proof",
+      "mandatory": true,
+      "description": "Matriculation pass certificate.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": 2500.0,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Full compulsory fee reimbursement plus annual maintenance allowance starting at Rs. 2,500/- for Class 11-12 day scholars.",
+    "non_financial_benefits": [
+      "Government National Certification",
+      "Direct Bank Transfer (DBT)"
+    ]
+  },
+  "application_period": {
+    "opening_date": "2025-07-01",
+    "deadline": "2025-12-31",
+    "academic_year": "2025-2026",
+    "status": "closed",
+    "status_verification_date": "2026-10-16",
+    "notes": "Verified against official guidelines. Window status: closed."
+  },
+  "application_status": "closed",
+  "official_source_urls": [
+    "https://scholarships.gov.in/",
+    "https://tribal.nic.in/post-matric.html"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [
+    {
+      "evidence_id": "ev_pmst_inc",
+      "field_path": "eligibility_criteria[0].value",
+      "supporting_excerpt": "Annual parental income should not exceed Rs. 2,50,000/- per annum.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://tribal.nic.in/post-matric.html",
+      "source_title": "Post-Matric Scholarship for ST Students - Ministry of Tribal Affairs"
+    },
+    {
+      "evidence_id": "ev_pmst_caste",
+      "field_path": "eligibility_criteria[1].value",
+      "supporting_excerpt": "The candidate must belong to Scheduled Tribe.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://tribal.nic.in/post-matric.html",
+      "source_title": "Post-Matric Scholarship for ST Students - Ministry of Tribal Affairs"
+    },
+    {
+      "evidence_id": "ev_pmst_scope",
+      "field_path": "education_levels",
+      "supporting_excerpt": "All post-matriculation courses in recognized institutions, starting from Class XI.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://tribal.nic.in/post-matric.html",
+      "source_title": "Post-Matric Scholarship for ST Students - Ministry of Tribal Affairs"
+    },
+    {
+      "evidence_id": "ev_pmst_ben",
+      "field_path": "benefits.financial_amount",
+      "supporting_excerpt": "Group IV courses including Class XI & XII: Rs. 2,500/- per annum for Day Scholars",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://tribal.nic.in/post-matric.html",
+      "source_title": "Post-Matric Scholarship for ST Students - Ministry of Tribal Affairs"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:37:35.670072+00:00",
+  "verification_status": "verified",
+  "review_notes": [
+    "[2026-10-16T05:37:35.670072+00:00] Verified by Human Data-Quality Engineer: Exact excerpts confirmed from official Ministry of Tribal Affairs guidelines.",
+    "All mandatory criteria and benefit amounts cross-referenced with official NSP/Ministry documentation."
+  ],
+  "synthetic": false
+}

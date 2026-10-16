@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yogya.org/schemas/v1/extraction.schema.json",
+  "title": "OpportunityExtractionOutput",
+  "description": "Structured output expected from LLM extraction of official schemes from ingested text",
+  "type": "object",
+  "required": [
+    "opportunities",
+    "extraction_metadata"
+  ],
+  "properties": {
+    "extraction_metadata": {
+      "type": "object",
+      "required": ["source_title", "extracted_schemes_count", "notes"],
+      "properties": {
+        "source_title": { "type": "string" },
+        "extracted_schemes_count": { "type": "integer", "minimum": 0 },
+        "ambiguities_found": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "$ref": "opportunity.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

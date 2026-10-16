@@ -1,0 +1,364 @@
+{
+  "timestamp": "2026-10-16T05:40:19.013581+00:00",
+  "project": "Yogya Opportunity Data Pipeline",
+  "metrics": {
+    "total_opportunities": 26,
+    "valid_records": 26,
+    "invalid_records": 0,
+    "records_requiring_human_review": 12,
+    "duplicate_candidate_pairs": 3,
+    "status_distribution": {
+      "draft": 12,
+      "verified": 14
+    },
+    "category_distribution": {
+      "scholarship": 16,
+      "vocational_training": 7,
+      "apprenticeship": 2,
+      "educational_assistance": 1
+    },
+    "total_validation_errors": 0,
+    "total_validation_warnings": 0
+  },
+  "ingestion_sources_count": 15,
+  "validation_summary": {
+    "total_records_processed": 26,
+    "valid_records": 26,
+    "invalid_records": 0,
+    "records_requiring_human_review": 12,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "record_results": [
+      {
+        "opportunity_id": "ministry_of_labour_employment_labour_wel",
+        "name": "MINISTRY OF LABOUR & EMPLOYMENT - LABOUR WELFARE ORGANISATION",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "ministry_of_minority_affairs_begum_hazra",
+        "name": "MINISTRY OF MINORITY AFFAIRS - BEGUM HAZRAT MAHAL SCHOLARSHIP",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "ministry_of_skill_development_and_entrep",
+        "name": "MINISTRY OF SKILL DEVELOPMENT AND ENTREPRENEURSHIP - NAPS-2",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "ministry_of_social_justice_and_empowerme",
+        "name": "MINISTRY OF SOCIAL JUSTICE AND EMPOWERMENT - PM YASASVI",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_begum_hazrat_mahal_2026",
+        "name": "Begum Hazrat Mahal National Scholarship Scheme",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_depwd_postmatric_disabilities_2026",
+        "name": "Post-Matric Scholarship for Students with Disabilities",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_depwd_prematric_disabilities_2026",
+        "name": "Pre-Matric Scholarship for Students with Disabilities",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_dgt_craftsmen_training_iti_2026",
+        "name": "Craftsmen Training Scheme (CTS) at Industrial Training Institutes (ITIs)",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_mole_beedi_mine_workers_scholarship_2026",
+        "name": "Financial Assistance for Education of Children of Beedi/Cine/IOMC/LSDM Workers",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_mota_postmatric_st_2026",
+        "name": "Post-Matric Scholarship Scheme for ST Students",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_mota_prematric_st_2026",
+        "name": "Pre-Matric Scholarship Scheme for ST Students",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_naps_apprenticeship_2026",
+        "name": "National Apprenticeship Promotion Scheme (NAPS-2)",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_nmms_scholarship_2026",
+        "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_nsp_postmatric_sc_2026",
+        "name": "Centrally Sponsored Post-Matric Scholarship for SC Students",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_nsp_prematric_sc_2026",
+        "name": "Centrally Sponsored Pre-Matric Scholarship Scheme for SC Students",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_pmkvy_skill_india_digital_2026",
+        "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY 4.0)",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_pm_yasasvi_postmatric_2026",
+        "name": "PM-YASASVI Post-Matric Scholarship for OBC, EBC and DNT Students",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "opp_pm_yasasvi_prematric_2026",
+        "name": "PM Young Achievers Scholarship Award Scheme for Vibrant India (PM-YASASVI) Pre-Matric",
+        "verification_status": "verified",
+        "is_valid": true,
+        "needs_human_review": false,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scheme_cts_1",
+        "name": "Scheme (Cts)\n1",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scheme_guidelines",
+        "name": "Scheme Guidelines",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scholarship_for_sc_students_1",
+        "name": "Scholarship For Sc Students\n1",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scholarship_for_sc_students_revised_guid",
+        "name": "Scholarship For Sc Students Revised Guidelines\n1",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scholarship_for_students_with_disabiliti",
+        "name": "Scholarship For Students With Disabilities\n1",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scholarship_for_st_students_1",
+        "name": "Scholarship For St Students\n1",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "scholarship_scheme",
+        "name": "Scholarship Scheme",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "opportunity_id": "yojana_pmkvy_4",
+        "name": "Yojana (Pmkvy 4",
+        "verification_status": "draft",
+        "is_valid": true,
+        "needs_human_review": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      }
+    ]
+  },
+  "duplicate_candidates": [
+    {
+      "opportunity_id_a": "opp_depwd_postmatric_disabilities_2026",
+      "opportunity_id_b": "opp_depwd_prematric_disabilities_2026",
+      "name_a": "Post-Matric Scholarship for Students with Disabilities",
+      "name_b": "Pre-Matric Scholarship for Students with Disabilities",
+      "provider_a": "Department of Empowerment of Persons with Disabilities, MSJE",
+      "provider_b": "Department of Empowerment of Persons with Disabilities, MSJE",
+      "confidence_score": 0.91,
+      "reasons": [
+        "High name similarity (91.2%): 'Post-Matric Scholarship for Students with Disabilities' vs 'Pre-Matric Scholarship for Students with Disabilities'"
+      ],
+      "distinctions": [],
+      "recommended_action": "Investigate: likely duplicate from different sources"
+    },
+    {
+      "opportunity_id_a": "opp_nsp_postmatric_sc_2026",
+      "opportunity_id_b": "opp_nsp_prematric_sc_2026",
+      "name_a": "Centrally Sponsored Post-Matric Scholarship for SC Students",
+      "name_b": "Centrally Sponsored Pre-Matric Scholarship Scheme for SC Students",
+      "provider_a": "Ministry of Social Justice and Empowerment",
+      "provider_b": "Ministry of Social Justice and Empowerment",
+      "confidence_score": 0.93,
+      "reasons": [
+        "High name similarity (92.5%): 'Centrally Sponsored Post-Matric Scholarship for SC Students' vs 'Centrally Sponsored Pre-Matric Scholarship Scheme for SC Students'"
+      ],
+      "distinctions": [],
+      "recommended_action": "Investigate: likely duplicate from different sources"
+    },
+    {
+      "opportunity_id_a": "opp_pm_yasasvi_postmatric_2026",
+      "opportunity_id_b": "opp_pm_yasasvi_prematric_2026",
+      "name_a": "PM-YASASVI Post-Matric Scholarship for OBC, EBC and DNT Students",
+      "name_b": "PM Young Achievers Scholarship Award Scheme for Vibrant India (PM-YASASVI) Pre-Matric",
+      "provider_a": "Ministry of Social Justice and Empowerment",
+      "provider_b": "Ministry of Social Justice and Empowerment",
+      "confidence_score": 0.9,
+      "reasons": [
+        "Shared official URL(s): ['https://socialjustice.gov.in/schemes/pm-yasasvi']"
+      ],
+      "distinctions": [],
+      "recommended_action": "Investigate: likely duplicate from different sources"
+    }
+  ]
+}

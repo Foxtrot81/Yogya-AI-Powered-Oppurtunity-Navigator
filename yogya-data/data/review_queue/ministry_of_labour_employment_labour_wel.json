@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "ministry_of_labour_employment_labour_wel",
+  "name": "MINISTRY OF LABOUR & EMPLOYMENT - LABOUR WELFARE ORGANISATION",
+  "category": "scholarship",
+  "provider": "MINISTRY OF LABOUR",
+  "description": "MINISTRY OF LABOUR & EMPLOYMENT - LABOUR WELFARE ORGANISATION 1. Target: Either of parents must be a Beedi, Iron Ore/Manganese/Chrome Ore, Limestone/Dolomite mine or Cine worker with at least 6 months continuous service. 2. Income Criterion: Total monthly income of worker's family from all sources should not exceed Rs. 10,000/- per month (Rs. 1,20,000/- per annum). 3. Educational Requirement: Stud",
+  "education_levels": [
+    "class_9",
+    "class_10"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [],
+  "required_documents": [
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Required for student identification and direct bank transfer.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": null,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Assistance provided under MINISTRY OF LABOUR & EMPLOYMENT - LABOUR WELFARE ORGANISATION",
+    "non_financial_benefits": []
+  },
+  "application_period": {
+    "opening_date": null,
+    "deadline": null,
+    "academic_year": null,
+    "status": "unknown",
+    "status_verification_date": "2026-10-16",
+    "notes": "Extracted via rule-based fallback. Requires human review."
+  },
+  "application_status": "unknown",
+  "official_source_urls": [
+    "https://scholarships.gov.in/"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [],
+  "last_checked_at": "2026-10-16T05:37:35.686595+00:00",
+  "verification_status": "needs_review",
+  "review_notes": [
+    "Created via rule-based fallback extractor. Pending human verification.",
+    "Placed into review queue on 2026-10-16T05:40:18.937187+00:00"
+  ],
+  "synthetic": false
+}

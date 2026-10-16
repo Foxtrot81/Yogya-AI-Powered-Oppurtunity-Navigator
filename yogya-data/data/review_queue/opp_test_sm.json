@@ -1,0 +1,12 @@
+{
+  "opportunity_id": "opp_test_sm",
+  "name": "Test State Machine Scheme",
+  "verification_status": "reviewed",
+  "review_notes": [
+    "[2026-10-16T05:39:31.309836+00:00] Status changed from 'draft' to 'needs_review' by qa_reviewer: Ready for audit",
+    "[2026-10-16T05:39:31.310287+00:00] Status changed from 'needs_review' to 'reviewed' by senior_qa: Audit complete"
+  ],
+  "evidence": [],
+  "eligibility_criteria": [],
+  "last_checked_at": "2026-10-16T05:39:31.310287+00:00"
+}

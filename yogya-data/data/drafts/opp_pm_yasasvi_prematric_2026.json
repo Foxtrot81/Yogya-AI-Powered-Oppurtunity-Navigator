@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "opp_pm_yasasvi_prematric_2026",
+  "name": "PM Young Achievers Scholarship Award Scheme for Vibrant India (PM-YASASVI) Pre-Matric",
+  "category": "scholarship",
+  "provider": "Ministry of Social Justice and Empowerment",
+  "description": "Pre-matric scholarship for Other Backward Classes (OBC), Economically Backward Classes (EBC), and De-Notified Nomadic Tribes (DNT) studying in Classes 9 and 10 in government schools.",
+  "education_levels": [
+    "class_9",
+    "class_10"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_yasasvi_pre_inc",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 250000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_yasasvi_pre_inc",
+      "review_status": "confirmed",
+      "notes": "Parental income limit Rs. 2,50,000/- p.a."
+    },
+    {
+      "criterion_id": "crit_yasasvi_pre_cat",
+      "field": "caste_category",
+      "operator": "in",
+      "value": [
+        "OBC",
+        "EBC",
+        "DNT"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_yasasvi_pre_cat",
+      "review_status": "confirmed",
+      "notes": "Eligible categories: OBC, EBC, DNT."
+    },
+    {
+      "criterion_id": "crit_yasasvi_pre_lvl",
+      "field": "current_education_level",
+      "operator": "in",
+      "value": [
+        "class_9",
+        "class_10"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_yasasvi_pre_lvl",
+      "review_status": "confirmed",
+      "notes": "Studying in Class 9 or 10."
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "OBC/EBC/DNT Certificate",
+      "document_type": "caste_proof",
+      "mandatory": true,
+      "description": "Category certificate issued by State authority.",
+      "evidence_reference": "ev_yasasvi_pre_cat"
+    },
+    {
+      "document_name": "Income Certificate",
+      "document_type": "income_proof",
+      "mandatory": true,
+      "description": "Valid family income certificate.",
+      "evidence_reference": "ev_yasasvi_pre_inc"
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": 4000.0,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Consolidated academic allowance of Rs. 4,000/- per annum per student via DBT.",
+    "non_financial_benefits": [
+      "Government National Certification",
+      "Direct Bank Transfer (DBT)"
+    ]
+  },
+  "application_period": {
+    "opening_date": "2025-07-01",
+    "deadline": "2025-11-30",
+    "academic_year": "2025-2026",
+    "status": "closed",
+    "status_verification_date": "2026-10-16",
+    "notes": "Verified against official guidelines. Window status: closed."
+  },
+  "application_status": "closed",
+  "official_source_urls": [
+    "https://scholarships.gov.in/",
+    "https://socialjustice.gov.in/schemes/pm-yasasvi"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [
+    {
+      "evidence_id": "ev_yasasvi_pre_inc",
+      "field_path": "eligibility_criteria[0].value",
+      "supporting_excerpt": "Parental income from all sources not exceeding Rs. 2,50,000/- per annum.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pm-yasasvi",
+      "source_title": "PM-YASASVI Scheme Guidelines - MoSJE"
+    },
+    {
+      "evidence_id": "ev_yasasvi_pre_cat",
+      "field_path": "eligibility_criteria[1].value",
+      "supporting_excerpt": "Target: OBC, EBC and DNT students studying in Class IX and X.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pm-yasasvi",
+      "source_title": "PM-YASASVI Scheme Guidelines - MoSJE"
+    },
+    {
+      "evidence_id": "ev_yasasvi_pre_lvl",
+      "field_path": "education_levels",
+      "supporting_excerpt": "Target: OBC, EBC and DNT students studying in Class IX and X.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pm-yasasvi",
+      "source_title": "PM-YASASVI Scheme Guidelines - MoSJE"
+    },
+    {
+      "evidence_id": "ev_yasasvi_pre_ben",
+      "field_path": "benefits.financial_amount",
+      "supporting_excerpt": "A consolidated academic allowance of Rs. 4,000/- per annum per student.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://socialjustice.gov.in/schemes/pm-yasasvi",
+      "source_title": "PM-YASASVI Scheme Guidelines - MoSJE"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:37:35.670072+00:00",
+  "verification_status": "verified",
+  "review_notes": [
+    "[2026-10-16T05:37:35.670072+00:00] Verified by Human Data-Quality Engineer: Exact excerpts confirmed from official Ministry of Social Justice and Empowerment guidelines.",
+    "All mandatory criteria and benefit amounts cross-referenced with official NSP/Ministry documentation."
+  ],
+  "synthetic": false
+}

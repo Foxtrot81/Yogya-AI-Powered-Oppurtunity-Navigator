@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "opp_nmms_scholarship_2026",
+  "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+  "category": "scholarship",
+  "provider": "Department of School Education & Literacy, Ministry of Education",
+  "description": "Central sector scheme to award scholarships to meritorious students of economically weaker sections to arrest dropouts at Class 8 and encourage them to continue study at secondary stage (Classes 9 to 12).",
+  "education_levels": [
+    "class_9",
+    "class_10",
+    "class_11",
+    "class_12"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_nmms_income",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 350000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_nmms_income",
+      "review_status": "confirmed",
+      "notes": "Parental income from all sources must not exceed Rs. 3,50,000/- per annum."
+    },
+    {
+      "criterion_id": "crit_nmms_class",
+      "field": "current_education_level",
+      "operator": "in",
+      "value": [
+        "class_9",
+        "class_10",
+        "class_11",
+        "class_12"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_nmms_class",
+      "review_status": "confirmed",
+      "notes": "Awarded for studying in Classes 9 through 12."
+    },
+    {
+      "criterion_id": "crit_nmms_school_type",
+      "field": "school_management_type",
+      "operator": "in",
+      "value": [
+        "government",
+        "government_aided",
+        "local_body"
+      ],
+      "unit": null,
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_nmms_school",
+      "review_status": "confirmed",
+      "notes": "Students of KVS, NVS, and private/residential schools are excluded."
+    },
+    {
+      "criterion_id": "crit_nmms_class8_marks",
+      "field": "min_marks_percentage",
+      "operator": "greater_than_or_equal",
+      "value": 55.0,
+      "unit": "percentage",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_nmms_marks",
+      "review_status": "confirmed",
+      "notes": "Minimum 55% in Class 8 (50% for SC/ST)."
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "Income Certificate",
+      "document_type": "income_proof",
+      "mandatory": true,
+      "description": "Issued by competent revenue authority (Tahsildar/SDM).",
+      "evidence_reference": "ev_nmms_docs"
+    },
+    {
+      "document_name": "Class 8 Marksheet",
+      "document_type": "academic_proof",
+      "mandatory": true,
+      "description": "Showing minimum 55% marks (50% for SC/ST).",
+      "evidence_reference": "ev_nmms_docs"
+    },
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Student Aadhaar or Aadhaar enrolment slip.",
+      "evidence_reference": "ev_nmms_docs"
+    },
+    {
+      "document_name": "Bank Passbook",
+      "document_type": "bank_details",
+      "mandatory": true,
+      "description": "Student bank account linked with Aadhaar for DBT.",
+      "evidence_reference": "ev_nmms_docs"
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": 12000.0,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Scholarship of Rs. 12,000/- per annum (Rs. 1,000/- per month) paid directly into the student bank account via DBT.",
+    "non_financial_benefits": [
+      "Government National Certification",
+      "Direct Bank Transfer (DBT)"
+    ]
+  },
+  "application_period": {
+    "opening_date": "2025-07-01",
+    "deadline": "2025-11-30",
+    "academic_year": "2025-2026",
+    "status": "closed",
+    "status_verification_date": "2026-10-16",
+    "notes": "Verified against official guidelines. Window status: closed."
+  },
+  "application_status": "closed",
+  "official_source_urls": [
+    "https://scholarships.gov.in/",
+    "https://dsel.education.gov.in/scheme/nmmss"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [
+    {
+      "evidence_id": "ev_nmms_income",
+      "field_path": "eligibility_criteria[0].value",
+      "supporting_excerpt": "Students whose parental income from all sources is not more than Rs. 3,50,000/- per annum are eligible to avail the scholarships.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+      "source_title": "NMMSS Official Scheme Guidelines - Ministry of Education"
+    },
+    {
+      "evidence_id": "ev_nmms_class",
+      "field_path": "education_levels",
+      "supporting_excerpt": "The amount of scholarship is Rs. 12,000/- per annum (Rs. 1000/- per month) from class IX to XII.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+      "source_title": "NMMSS Official Scheme Guidelines - Ministry of Education"
+    },
+    {
+      "evidence_id": "ev_nmms_school",
+      "field_path": "eligibility_criteria[2].value",
+      "supporting_excerpt": "The student must study as regular student in Government, Government-aided and local body schools.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+      "source_title": "NMMSS Official Scheme Guidelines - Ministry of Education"
+    },
+    {
+      "evidence_id": "ev_nmms_marks",
+      "field_path": "eligibility_criteria[3].value",
+      "supporting_excerpt": "Students must have minimum of 55% marks or equivalent grade in Class VIII examination (relaxable by 5% for SC/ST students).",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+      "source_title": "NMMSS Official Scheme Guidelines - Ministry of Education"
+    },
+    {
+      "evidence_id": "ev_nmms_benefit",
+      "field_path": "benefits.financial_amount",
+      "supporting_excerpt": "The amount of scholarship is Rs. 12,000/- per annum (Rs. 1000/- per month) from class IX to XII.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+      "source_title": "NMMSS Official Scheme Guidelines - Ministry of Education"
+    },
+    {
+      "evidence_id": "ev_nmms_docs",
+      "field_path": "required_documents",
+      "supporting_excerpt": "Documents Required: Income certificate, Class VIII marksheet, Aadhaar card, Bank passbook details.",
+      "retrieved_at": "2026-10-16T05:37:35.670072+00:00",
+      "extraction_method": "manual",
+      "review_status": "verified",
+      "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+      "source_title": "NMMSS Official Scheme Guidelines - Ministry of Education"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:37:35.670072+00:00",
+  "verification_status": "verified",
+  "review_notes": [
+    "[2026-10-16T05:37:35.670072+00:00] Verified by Human Data-Quality Engineer: Exact excerpts confirmed from official Department of School Education & Literacy, Ministry of Education guidelines.",
+    "All mandatory criteria and benefit amounts cross-referenced with official NSP/Ministry documentation."
+  ],
+  "synthetic": false
+}

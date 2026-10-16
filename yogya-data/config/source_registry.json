@@ -1,0 +1,88 @@
+{
+  "sources": [
+    {
+      "source_id": "src_nsp",
+      "name": "National Scholarship Portal",
+      "canonical_url": "https://scholarships.gov.in/",
+      "portal_type": "central_portal",
+      "category": "scholarship",
+      "target_groups": ["Classes 9-12", "Undergraduate", "Minority", "SC", "ST", "OBC", "Disabilities"],
+      "api_available": false,
+      "requires_auth": false,
+      "documentation_format": ["html", "pdf_guidelines"],
+      "notes": "Main national portal for Pre-Matric and Post-Matric central sector and state schemes. Application windows fluctuate annually."
+    },
+    {
+      "source_id": "src_skill_india",
+      "name": "Skill India Digital Hub",
+      "canonical_url": "https://www.skillindiadigital.gov.in/",
+      "portal_type": "central_portal",
+      "category": "vocational_training",
+      "target_groups": ["Youth", "School dropouts", "Vocational aspirants", "Rural students"],
+      "api_available": false,
+      "requires_auth": false,
+      "documentation_format": ["html"],
+      "notes": "Under MSDE; provides PMKVY, short-term courses, and apprenticeship opportunities."
+    },
+    {
+      "source_id": "src_bharat_skills",
+      "name": "Bharat Skills",
+      "canonical_url": "https://www.bharatskill.gov.in/",
+      "portal_type": "learning_repository",
+      "category": "vocational_training",
+      "target_groups": ["ITI students", "Vocational trainees"],
+      "api_available": false,
+      "requires_auth": false,
+      "documentation_format": ["html", "pdf_curriculum"],
+      "notes": "DGT repository for Craftsmen Training Scheme (CTS), Craft Instructor Training Scheme (CITS), and blended courses."
+    },
+    {
+      "source_id": "src_data_gov",
+      "name": "Open Government Data Platform India",
+      "canonical_url": "https://data.gov.in/",
+      "portal_type": "open_data",
+      "category": "other",
+      "target_groups": ["Researchers", "Public"],
+      "api_available": true,
+      "requires_auth": true,
+      "documentation_format": ["csv", "json", "xml"],
+      "notes": "Catalogues historical disbursements and scheme summaries; requires API key for automated REST endpoints."
+    },
+    {
+      "source_id": "src_dsel_education",
+      "name": "Department of School Education & Literacy (MoE)",
+      "canonical_url": "https://dsel.education.gov.in/",
+      "portal_type": "ministry_website",
+      "category": "scholarship",
+      "target_groups": ["Classes 9-12", "Rural students"],
+      "api_available": false,
+      "requires_auth": false,
+      "documentation_format": ["pdf_guidelines", "html"],
+      "notes": "Hosts official guidelines for National Means-cum-Merit Scholarship Scheme (NMMSS) and Samagra Shiksha."
+    },
+    {
+      "source_id": "src_social_justice",
+      "name": "Ministry of Social Justice and Empowerment",
+      "canonical_url": "https://socialjustice.gov.in/",
+      "portal_type": "ministry_website",
+      "category": "scholarship",
+      "target_groups": ["SC", "OBC", "EBC", "DNT"],
+      "api_available": false,
+      "requires_auth": false,
+      "documentation_format": ["pdf_guidelines", "html"],
+      "notes": "Official policy guidelines for PM-YASASVI, Pre-Matric SC, Post-Matric SC, Top Class Education."
+    },
+    {
+      "source_id": "src_tribal_affairs",
+      "name": "Ministry of Tribal Affairs",
+      "canonical_url": "https://tribal.nic.in/",
+      "portal_type": "ministry_website",
+      "category": "scholarship",
+      "target_groups": ["ST"],
+      "api_available": false,
+      "requires_auth": false,
+      "documentation_format": ["pdf_guidelines", "html"],
+      "notes": "Official scheme guidelines for Pre-Matric and Post-Matric scholarships for Scheduled Tribe students."
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yogya.org/schemas/v1/opportunity.schema.json",
+  "title": "YogyaOpportunity",
+  "description": "Strict schema for rural educational opportunities, scholarships, vocational schemes and apprenticeships.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "opportunity_id",
+    "name",
+    "category",
+    "provider",
+    "description",
+    "education_levels",
+    "geographic_scope",
+    "eligibility_criteria",
+    "required_documents",
+    "benefits",
+    "application_period",
+    "application_status",
+    "official_source_urls",
+    "evidence",
+    "last_checked_at",
+    "verification_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the opportunity schema"
+    },
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]{5,80}$",
+      "description": "Unique stable identifier for the opportunity"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 300,
+      "description": "Official title of the opportunity / scheme"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "scholarship",
+        "educational_assistance",
+        "vocational_training",
+        "apprenticeship",
+        "course",
+        "other"
+      ],
+      "description": "Primary classification of the opportunity"
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 200,
+      "description": "Government ministry, department, board, or organization offering the scheme"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Concise summary of the scheme purpose, target audience, and scope"
+    },
+    "education_levels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "class_9",
+          "class_10",
+          "class_11",
+          "class_12",
+          "undergraduate",
+          "diploma",
+          "vocational",
+          "postgraduate",
+          "all"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Eligible target education classes or stages"
+    },
+    "geographic_scope": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["national", "state", "district"]
+        },
+        "states": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "districts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      },
+      "additionalProperties": false
+    },
+    "eligibility_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "criterion_id",
+          "field",
+          "operator",
+          "condition_type",
+          "required"
+        ],
+        "properties": {
+          "criterion_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_-]{3,60}$"
+          },
+          "field": {
+            "type": "string",
+            "description": "Profile field (e.g., annual_family_income, caste_category, min_marks_percentage, gender, domicile_state, disability_status)"
+          },
+          "operator": {
+            "type": "string",
+            "enum": [
+              "equals",
+              "not_equals",
+              "less_than",
+              "less_than_or_equal",
+              "greater_than",
+              "greater_than_or_equal",
+              "in",
+              "not_in",
+              "between",
+              "contains",
+              "requires_document",
+              "unknown_or_manual_review"
+            ]
+          },
+          "value": {
+            "description": "Target threshold or set of allowed values"
+          },
+          "unit": {
+            "type": ["string", "null"],
+            "description": "Unit of measurement if applicable (e.g., INR/year, percentage)"
+          },
+          "condition_type": {
+            "type": "string",
+            "enum": ["mandatory", "optional", "disqualification", "preference"]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "evidence_reference": {
+            "type": ["string", "null"],
+            "description": "Matches evidence_id in the evidence array"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": ["unreviewed", "confirmed", "flagged", "rejected"],
+            "default": "unreviewed"
+          },
+          "notes": {
+            "type": ["string", "null"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "required_documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_name", "document_type", "mandatory"],
+        "properties": {
+          "document_name": { "type": "string" },
+          "document_type": { "type": "string" },
+          "mandatory": { "type": "boolean" },
+          "description": { "type": ["string", "null"] },
+          "evidence_reference": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "benefits": {
+      "type": "object",
+      "required": ["type", "description"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "financial",
+            "stipend",
+            "tuition_waiver",
+            "in_kind",
+            "composite",
+            "training_and_certification"
+          ]
+        },
+        "financial_amount": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "currency": {
+          "type": ["string", "null"],
+          "default": "INR"
+        },
+        "frequency": {
+          "type": ["string", "null"],
+          "enum": [
+            "annual",
+            "monthly",
+            "one_time",
+            "course_duration",
+            "variable",
+            null
+          ]
+        },
+        "description": { "type": "string" },
+        "non_financial_benefits": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      },
+      "additionalProperties": false
+    },
+    "application_period": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "opening_date": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "deadline": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "academic_year": {
+          "type": ["string", "null"],
+          "pattern": "^(\\d{4}-\\d{4}|\\d{4})$"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["open", "closed", "upcoming", "unknown"]
+        },
+        "status_verification_date": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "application_status": {
+      "type": "string",
+      "enum": ["open", "closed", "upcoming", "unknown"]
+    },
+    "official_source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1
+    },
+    "application_url": {
+      "type": ["string", "null"]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "field_path",
+          "source_url",
+          "supporting_excerpt",
+          "retrieved_at",
+          "extraction_method",
+          "review_status"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^ev_[a-z0-9_-]{2,60}$"
+          },
+          "field_path": {
+            "type": "string",
+            "description": "JSON path to the verified field (e.g. eligibility_criteria[0].value, benefits.financial_amount)"
+          },
+          "source_url": { "type": "string" },
+          "source_title": { "type": ["string", "null"] },
+          "supporting_excerpt": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 1000
+          },
+          "page_number": { "type": ["integer", "null"], "minimum": 1 },
+          "section_heading": { "type": ["string", "null"] },
+          "retrieved_at": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T.*$"
+          },
+          "extraction_method": {
+            "type": "string",
+            "enum": [
+              "manual",
+              "rule_based",
+              "llm_gemini",
+              "llm_openai",
+              "llm_fallback"
+            ]
+          },
+          "review_status": {
+            "type": "string",
+            "enum": ["pending_review", "verified", "rejected", "flagged"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "last_checked_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T.*$"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["draft", "needs_review", "reviewed", "verified", "stale", "rejected"]
+    },
+    "review_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "synthetic": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}

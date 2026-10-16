@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "opportunity_id": "scholarship_for_sc_students_1",
+  "name": "Scholarship For Sc Students\n1",
+  "category": "scholarship",
+  "provider": "MINISTRY OF SOCIAL JUSTICE",
+  "description": "GOVERNMENT OF INDIA, MINISTRY OF SOCIAL JUSTICE & EMPOWERMENT GUIDELINES FOR CENTRALLY SPONSORED PRE-MATRIC SCHOLARSHIP FOR SC STUDENTS 1. Scope: The scholarship is available for studying in Classes IX and X only. 2. Eligibility: - The student should belong to Scheduled Caste (SC). - Parental/guardian's income from all sources should not exceed Rs. 2,50,000/- per annum. - The students should be re",
+  "education_levels": [
+    "class_9",
+    "class_10"
+  ],
+  "geographic_scope": {
+    "type": "national",
+    "states": [],
+    "districts": []
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "crit_income",
+      "field": "annual_family_income",
+      "operator": "less_than_or_equal",
+      "value": 250000.0,
+      "unit": "INR/year",
+      "condition_type": "mandatory",
+      "required": true,
+      "evidence_reference": "ev_income_1",
+      "review_status": "unreviewed",
+      "notes": "Auto-detected from excerpt: 'income from all sources should not exceed Rs. 2,50,000'"
+    }
+  ],
+  "required_documents": [
+    {
+      "document_name": "Aadhaar Card",
+      "document_type": "identity_proof",
+      "mandatory": true,
+      "description": "Required for student identification and direct bank transfer.",
+      "evidence_reference": null
+    }
+  ],
+  "benefits": {
+    "type": "financial",
+    "financial_amount": null,
+    "currency": "INR",
+    "frequency": "annual",
+    "description": "Assistance provided under Scholarship For Sc Students\n1",
+    "non_financial_benefits": []
+  },
+  "application_period": {
+    "opening_date": null,
+    "deadline": null,
+    "academic_year": null,
+    "status": "unknown",
+    "status_verification_date": "2026-10-16",
+    "notes": "Extracted via rule-based fallback. Requires human review."
+  },
+  "application_status": "unknown",
+  "official_source_urls": [
+    "https://scholarships.gov.in/"
+  ],
+  "application_url": "https://scholarships.gov.in/",
+  "evidence": [
+    {
+      "evidence_id": "ev_income_1",
+      "field_path": "eligibility_criteria[0].value",
+      "source_url": "https://scholarships.gov.in/",
+      "source_title": "Pre-Matric Scholarship Scheme for SC Students - MoSJE Guidelines",
+      "supporting_excerpt": "income from all sources should not exceed Rs. 2,50,000",
+      "retrieved_at": "2026-10-16T05:37:35.671113+00:00",
+      "extraction_method": "rule_based",
+      "review_status": "pending_review"
+    }
+  ],
+  "last_checked_at": "2026-10-16T05:37:35.671113+00:00",
+  "verification_status": "needs_review",
+  "review_notes": [
+    "Created via rule-based fallback extractor. Pending human verification.",
+    "Placed into review queue on 2026-10-16T05:40:18.961454+00:00"
+  ],
+  "synthetic": false
+}
