@@ -1,4 +1,4 @@
-# Yogya (योग्य) — AI-Powered Opportunity Navigator 🇮🇳
+# Yogya (योग्य) — AI-Powered Opportunity Navigator
 **Citi India Hackathon Project**
 
 Welcome to **Yogya**, an AI-powered opportunity navigation platform built to help students across rural and urban India discover verified government scholarships, skill development training programs, youth welfare schemes, and industrial apprenticeships.

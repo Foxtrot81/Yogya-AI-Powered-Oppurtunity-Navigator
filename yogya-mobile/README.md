@@ -1,4 +1,4 @@
-# Yogya Mobile (योग्य) 🇮🇳
+# Yogya Mobile (योग्य)
 
 An AI-powered opportunity navigator for students across rural and urban India. Yogya connects students to verified government scholarships, skill development training programs, youth welfare schemes, and industrial apprenticeships.
 
