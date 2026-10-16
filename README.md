@@ -130,8 +130,3 @@ cd yogya-data
 python -m pytest tests/ -v
 ```
 
----
-
-## 👥 Contributors & Hackathon Team
-* **Yogya Team — Citi India Hackathon**
-* Mobile Frontend Lead: **Priyanshu** (`priyanshu150106`)
